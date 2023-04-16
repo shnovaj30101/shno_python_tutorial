@@ -6,3 +6,5 @@ print(f"{'a':>6s}{'a^2':>6s}{'a^3':>6s}", file=file_obj)
 
 for i in range(1, 11):
     print(f"{i:>6d}{i**2:>6d}{i**3:>6d}", file=file_obj)
+
+file_obj.close() # 記得最後要把檔案 close 掉
